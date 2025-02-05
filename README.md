@@ -106,6 +106,7 @@ Error display:
 
 ## Known Issues
 
+- The serial communication program not stop to comunicate with the port when the ESP32 is disconnected.
 - Songs with too long titles or artists may not fit the display was shown by the example below:
 
 #### Display Overflow:
