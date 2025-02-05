@@ -8,6 +8,15 @@ A Spotify player display implementation using ESP32 and an OLED I2C display.
 
 This project displays Spotify playback information on an OLED screen connected to an ESP32 microcontroller.
 
+### Simulated Prototype
+
+For desmonstration and testing purposes, a simulated prototype is available at [Wokwi][wokwi] (an online ESP32 simulator).
+
+[![Run on Wokwi](https://us-mirror.eduu.xyz/images/esp32-spotify-player/wokwi.png)](https://wokwi.com/projects/421967464970302465)
+
+
+
+
 ## Requirements
 
 > [!NOTE]
@@ -95,8 +104,17 @@ Error display:
 
 <img src="https://us-mirror.eduu.xyz/images/esp32-spotify-player/error.svg" width="360">
 
+## Known Issues
+
+- Songs with too long titles or artists may not fit the display was shown by the example below:
+
+#### Display Overflow:
+<img src="https://us-mirror.eduu.xyz/images/esp32-spotify-player/issue.svg" width="360">
+
+<br>
 
 [u8g2]: https://github.com/olikraus/u8g2
 [playerctl]: https://github.com/altdesktop/playerctl
 [playerctl-installation]: https://github.com/altdesktop/playerctl/blob/master/README.md#installing
 [supported-controller]: https://github.com/olikraus/u8g2/wiki/u8g2setupcpp
+[wokwi]: https://wokwi.com/projects/421967464970302465
